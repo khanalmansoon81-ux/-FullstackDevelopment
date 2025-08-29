@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about HTML in Mansoon Khanal's professional ePortfolio.">
+  <meta name="author" content="Mansoon Khanal">
+  <title>🌐 Mansoon khanal's ePortfolio - HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand animate_animated animate_fadeIn" href="index.html">🌐 Mansoon Khanal's ePortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Full Stack</a></li>
+          <li class="nav-item"><a class="nav-link active" href="html.html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+          <li class="nav-item"><button class="btn btn-outline-light login-btn animate_animated animate_fadeIn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 animate_animated animate_fadeInDown">HTML (HyperText Markup Language)</h1>
+      <h2 class="typed-text lead mb-4"></h2>
+      <a href="#content" class="btn btn-primary btn-lg animate_animated animatepulse animate_infinite">Explore HTML</a>
+    </div>
+  </header>
+  <main id="content" class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 animate__animated" data-animation="fadeInUp">
+        <div class="card definition-card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Definition</h3>
+            <p class="card-text">HTML is the standard markup language for creating web pages, using tags to define elements like headings (<h1>-<h6>), paragraphs (<p>), lists (<ul>, <ol>), links (<a>), images (<img>), tables (<table>), and forms (<form>).</p>
+            <p><strong>HTML5:</strong> Introduces semantic elements (<header>, <nav>, <article>, <section>, <footer>), multimedia support (<video>, <audio>), canvas for graphics, and APIs (geolocation, drag-and-drop, local storage). It enhances accessibility and SEO.</p>
+            <p><strong>Use Cases:</strong> Static websites, web forms, landing pages, and as a foundation for dynamic apps with JavaScript.</p>
+            <a href="#" class="btn btn-primary">HTML5 Features</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animate__animated" data-animation="fadeInUp">
+        <div class="card advantages-card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Advantages</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Simplicity: Easy-to-learn syntax for beginners.</li>
+              <li class="list-group-item">Universal: Supported by all browsers (Chrome, Firefox, Safari).</li>
+              <li class="list-group-item">Foundation: Integrates with CSS, JavaScript, and frameworks.</li>
+              <li class="list-group-item">Accessibility: Semantic tags improve screen reader compatibility.</li>
+              <li class="list-group-item">Performance: Lightweight, no server-side processing needed.</li>
+            </ul>
+            <a href="#" class="btn btn-success mt-3">Why HTML?</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animate__animated" data-animation="fadeInUp">
+        <div class="card disadvantages-card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Disadvantages</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Static: No interactivity or styling without additional tech.</li>
+              <li class="list-group-item">Verbosity: Complex layouts increase code length.</li>
+              <li class="list-group-item">Error Tolerance: Browsers forgive errors, masking issues.</li>
+              <li class="list-group-item">Limited Logic: Cannot handle computations or data processing.</li>
+            </ul>
+            <a href="#" class="btn btn-danger mt-3">HTML Challenges</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 animate__animated" data-animation="fadeInUp">
+        <div class="card example-card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Example</h3>
+            <p>Below is an HTML snippet and its rendered output:</p>
+            <pre><code>&lt;header&gt;
+  &lt;h1&gt;Welcome to My Site&lt;/h1&gt;
+&lt;/header&gt;
+&lt;section&gt;
+  &lt;p&gt;Explore our content!&lt;/p&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Click Here&lt;/a&gt;
+&lt;/section&gt;
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            <div class="mt-3">
+              <header><h1>Welcome to My Site</h1></header>
+              <section>
+                <p>Explore our content!</p>
+                <a href="#" class="btn btn-primary">Click Here</a>
+              </section>
+              <table class="table">
+                <thead><tr><th>Header</th></tr></thead>
+                <tbody><tr><td>Data</td></tr></tbody>
+              </table>
+            </div>
+            <p class="mt-3">Explanation: Semantic elements organize content logically, improving accessibility and SEO. The table and button demonstrate structured data and interactivity.</p>
+            <a href="#" class="btn btn-warning mt-3">Try It</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 animate__animated" data-animation="fadeInUp">
+        <div class="card advanced-card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Advanced Topics & Best Practices</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Semantics: Use ARIA roles for accessibility (e.g., role="navigation").</li>
+              <li class="list-group-item">Validation: Validate with W3C Markup Validator to ensure standards compliance.</li>
+              <li class="list-group-item">Performance: Minify HTML, use lazy-loaded images, and leverage CDN for assets.</li>
+              <li class="list-group-item">Modern Use: Build progressive web apps (PWAs) with service workers and manifest files for offline capabilities.</li>
+            </ul>
+            <a href="#" class="btn btn-info mt-3">Advanced HTML</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dashboard" class="mt-5 d-none">
+      <div class="card">
+        <div class="card-body text-center">
+          <h3>Welcome to Dashboard!</h3>
+          <p>User: <span id="userDisplay"></span></p>
+          <button id="logoutBtn" class="btn btn-danger mb-3">Logout</button>
+          <button id="counterBtn" class="btn btn-primary mb-3">Increment Counter</button>
+          <p>Counter: <span id="counter">0</span></p>
+          <button id="toggleThemeBtn" class="btn btn-secondary">Toggle Theme</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-lg-start">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-4 animate_animated animate_fadeIn">About Me</h5>
+          <p class="animate_animated animate_fadeIn" data-animation="fadeIn">Mansoon Khanal | Full Stack Developer Enthusiast</p>
+          <p class="animate_animated animate_fadeIn" data-animation="fadeIn">Crafting innovative web solutions with passion. Created for CET138 Assignment 1.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-4 animate_animated animate_fadeIn">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link animate_animated animate_fadeIn" data-animation="fadeIn">Full Stack</a></li>
+            <li><a href="html.html" class="footer-link animate_animated animate_fadeIn" data-animation="fadeIn">HTML</a></li>
+            <li><a href="css.html" class="footer-link animate_animated animate_fadeIn" data-animation="fadeIn">CSS</a></li>
+            <li><a href="bootstrap.html" class="footer-link animate_animated animate_fadeIn" data-animation="fadeIn">Bootstrap</a></li>
+            <li><a href="javascript.html" class="footer-link animate_animated animate_fadeIn" data-animation="fadeIn">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-4 animate_animated animate_fadeIn">Contact</h5>
+          <p class="animate_animated animate_fadeIn" data-animation="fadeIn">Email: <a href="mailto:mansoon.khanal@example.com" class="footer-link">mansoon.khanal@example.com</a></p>
+          <p class="animate_animated animate_fadeIn" data-animation="fadeIn">Phone: +977 (123) 456-7890</p>
+          <div class="social-icons mt-3">
+            <a href="https://github.com" class="me-3 social-icon animate_animated animate_fadeIn" data-animation="fadeIn"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" class="me-3 social-icon animate_animated animate_fadeIn" data-animation="fadeIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" class="me-3 social-icon animate_animated animate_fadeIn" data-animation="fadeIn"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-4 animate_animated animate_fadeIn">Newsletter</h5>
+          <form id="newsletterForm" class="animate_animated animate_fadeIn" data-animation="fadeIn">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center py-3">
+        © 2025 Mansoon Khanal's ePortfolio | Designed with  using HTML, CSS, Bootstrap, and JavaScript
+      </div>
+    </div>
+  </footer>
+  <button id="backToTop" class="btn btn-primary back-to-top"><i class="bi bi-arrow-up"></i></button>
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
